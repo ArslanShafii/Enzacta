@@ -1,0 +1,70 @@
+<!--
+  Generated template for the PaymentPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <button ion-button menuToggle></button>
+    <ion-title>Enzacta</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card class="card-background-page">
+    <img src="../../assets/images/Enrol.jpg"/>
+    <div class="card-title">Payment Info</div>
+
+  </ion-card>
+  <ion-label stacked style="color: Black; margin-left: 10px;">Please Choose your payment method:</ion-label>
+  <ion-input  type="text"  name = "name" style="border: 1px solid #ebedef; border-radius: 15px; color: black;"></ion-input>
+
+  <ion-item>
+    <ion-label stacked style=" margin-left: 10px; color: black">Credit Card Type</ion-label>
+
+    <ion-select [(ngModel)]="Card"    >
+      <ion-option value="mex">Visa</ion-option>
+      <ion-option value="spa">Master</ion-option>
+      </ion-select>
+
+    </ion-item>
+
+  <ion-label stacked style="color: Black; margin-left: 10px;">Card No</ion-label>
+  <ion-input  type="text"  name = "Card no" style="border: 1px solid #ebedef; border-radius: 15px; color: black;"></ion-input>
+
+  <ion-label stacked style="color: Black; margin-left: 10px;">Expiration Date</ion-label>
+  <ion-input  type="text"  name = "Card no" style="border: 1px solid #ebedef; border-radius: 15px; color: black;"></ion-input>
+
+  <ion-label stacked style="color: Black; margin-left: 10px;">Credit Card Security No</ion-label>
+  <ion-input  type="text"  name = "Security" style="border: 1px solid #ebedef; border-radius: 15px; color: black;"></ion-input>
+
+  <ion-label stacked style="color: Black; margin-left: 10px;">Name on Card</ion-label>
+  <ion-input  type="text"  name = "Card no" style="border: 1px solid #ebedef; border-radius: 15px; color: black;"></ion-input>
+
+  <ion-label stacked style="color: Black; margin-left: 10px;">Email</ion-label>
+  <ion-input  type="text"  name = "Email" style="border: 1px solid #ebedef; border-radius: 15px; color: black;"></ion-input>
+
+  <ion-label stacked style="color: Black; margin-left: 10px;">Amount</ion-label>
+  <ion-input  type="text"  name = "Amount" style="border: 1px solid #ebedef; border-radius: 15px; color: black;"></ion-input>
+
+  <ion-label stacked style="color: Black; margin-left: 10px;">
+    You want to bill this order</ion-label>
+
+  <ion-toggle style="margin-left: 80%"  checked="true"></ion-toggle>
+
+
+  <button ion-button (click) ="opencarddetails()" round outline  style="color: black;width:200px;  border-color: black; margin-left: 16%; background-color: rgba(175, 111, 29, 0.76)">Next</button>
+
+
+
+
+
+
+</ion-content>

@@ -1,0 +1,38 @@
+<!--
+  Generated template for the AddPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+
+    <ion-title>Enzacta</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="home">
+
+  <h1 style="color: black; " >Add Products to your basket</h1>
+  <p stacked>would you like to add other products to your basket?</p>
+
+
+  <ion-toggle style="margin-left: 80%"  checked="true"></ion-toggle>
+  <p> Selected Product list</p>
+  <ion-item STYLE="background-color: rgba(149, 175, 163, 0.33);">
+    <ion-thumbnail item-start>
+      <img src="../../assets/images/background.jpg">
+    </ion-thumbnail>
+    <h2>IBO standard plan</h2>
+    <p style="margin-left: 60px;color: brown">55 BVS</p>
+    <p style="margin-left: 90px">CAD $99</p>
+  </ion-item>
+
+  <button ion-button round outline  style="color: black;width:200px; margin-top: 10%;  border-color: white; margin-left: 16%;">Select</button>
+  <button ion-button (click)="shipping()" round outline style="margin-left: 16%"class="button">Next</button>
+
+
+</ion-content>
